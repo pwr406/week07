@@ -8,7 +8,9 @@
 <body>
 <header>
     <h1>Contact</h1>
-    <nav><a href="index.html">Home</a> <a href="about.html">About</a> <a href="contact.html">Contact</a></nav>
+    <nav>
+        <a href="index.html">Home</a> <a href="about.html">About</a> <a href="contact.html">Contact</a>
+    </nav>
 </header>
     <main>
         <h2> Contact Me</h2>
@@ -17,11 +19,14 @@
             <input type="text" name="firstName" placeholder="First Name"> <br>
             <input type="text" name="lastName" placeholder="Last Name"> <br>
             <input type="tel"  name="Phone" placeholder="Phone number"><br>
-            Reason for contact:<br>
+           <!--added field set and legend to group together radio buttons. added checked to last radio button-->
+            <fieldset>
+            <legend>What is your reason for contacting me?</legend>
             <input type="radio" name="contactReason" value="Hello"> Just saying hello <br>
             <input type="radio" name="contactReason" value="Complaint"> I am mad and want to complain <br>
-            <input type="radio" name="contactReason" value="Compliment">I want to compliment you <br>
+            <input type="radio" name="contactReason" value="Compliment" checked>I want to compliment you <br>
             <input type="submit" value="Submit">
+            </fieldset>
         </form>
     </main>
 </body>
