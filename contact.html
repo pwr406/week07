@@ -16,9 +16,10 @@
         <h2> Contact Me</h2>
         <!--created form with text inputs and radio inputs.-->
         <form>
-            <input type="text" name="firstName" placeholder="First Name"> <br>
-            <input type="text" name="lastName" placeholder="Last Name"> <br>
-            <input type="tel"  name="Phone" placeholder="Phone number"><br>
+            <!--moved inputs to different lines using <br> - will correct in css. - used label attribute for to associate with ID of input-->
+            <label for="firstName">First Name: </label><input type="text" name="firstName" placeholder="First Name" id="firstName"> <br>
+            <label for="lastName">Last Name: </label><input type="text" name="lastName" placeholder="Last Name" id="lastName"> <br>
+            <label for="phone">Phone: </label><input type="tel"  name="Phone" placeholder="Phone number" id="phone"> <br>
            <!--added field set and legend to group together radio buttons. added checked to last radio button-->
             <fieldset>
             <legend>What is your reason for contacting me?</legend>
